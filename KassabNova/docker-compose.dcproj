@@ -3,7 +3,7 @@
   <PropertyGroup Label="Globals">
     <ProjectVersion>2.1</ProjectVersion>
     <DockerTargetOS>Linux</DockerTargetOS>
-    <ProjectGuid>3abc3a39-d1e6-44ec-b5fd-a3d7ce8c9a80</ProjectGuid>
+    <ProjectGuid>f053b81e-5aec-4bf3-acc5-1427117c2181</ProjectGuid>
     <DockerLaunchAction>LaunchBrowser</DockerLaunchAction>
     <DockerServiceUrl>{Scheme}://localhost:{ServicePort}</DockerServiceUrl>
     <DockerServiceName>kassabnova</DockerServiceName>

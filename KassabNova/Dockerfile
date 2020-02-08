@@ -6,10 +6,10 @@ EXPOSE 80
 
 FROM mcr.microsoft.com/dotnet/core/sdk:3.1-buster AS build
 WORKDIR /src
-COPY ["KassabNova/KassabNova.csproj", "KassabNova/"]
-RUN dotnet restore "KassabNova/KassabNova.csproj"
+COPY ["KassabNova.csproj", "./"]
+RUN dotnet restore "KassabNova.csproj"
 COPY . .
-WORKDIR "/src/KassabNova"
+WORKDIR "/src/"
 RUN dotnet build "KassabNova.csproj" -c Release -o /app/build
 
 FROM build AS publish
