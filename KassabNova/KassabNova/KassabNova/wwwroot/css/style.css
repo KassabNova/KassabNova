@@ -587,6 +587,7 @@ dl {
     margin: 0px auto;
     width: 100%;
     max-width: 950px;
+    font-size: 15px;
 }
     dl dt {
         float: left;
@@ -594,8 +595,10 @@ dl {
         width: 300px;
         max-width: 360px;
         padding: 10px;
+        color: #ffffff;
         border-top: 1px dotted #efefef;
-        text-align: right;
+        text-align: center;
+        font-size: 20px;
     }
 
     dl dd {
@@ -603,15 +606,33 @@ dl {
         float: left;
         padding: 5px 10px 5px 10px;
         margin: 5px 0 0 15px;
-        background-color: #48c7e7;
-        color: #efefef;
+        background-color: #b564f3;
+        color: #ffffff;
         -webkit-border-radius: 10px;
         -moz-border-radius: 10px;
         -ms-border-radius: 10px;
         -o-border-radius: 10px;
         border-radius: 10px;
+        font-size: 15px;
     }
 
+/*#our-process:after {
+    content: ' ';
+    display: block;
+    height: 200px;
+    width: 100%;
+    background: #0B0021;
+    -webkit-transform: skewY(-3deg) translateZ(0);
+    -moz-transform: skewY(-3deg) translateZ(0);
+    -ms-transform: skewY(-3deg) translateZ(0);
+    -o-transform: skewY(-3deg) translateZ(0);
+    transform: skewY(-3deg) translateZ(0);
+    position: absolute;
+    left: 0;
+    bottom: -100px;
+    overflow: hidden;
+    z-index: 88;
+}*/
 
 
 /*====================================
@@ -1170,7 +1191,7 @@ dl {
     font-family: 'Open Sans', sans-serif;
 }
 #footer .copyright span.separator {
-    font-size: 10px;
+    font-size: 15px;
     -webkit-transform: translateY(-2px);
     -moz-transform: translateY(-2px);
     -ms-transform: translateY(-2px);
@@ -1200,8 +1221,8 @@ dl {
     background: -ms-linear-gradient(left, #ff3535 0%,#ffb22d 19%,#f7df00 37%,#26ff6c 56%,#268bff 76%,#8b3cff 100%);
     background: linear-gradient(to right, #ff3535 0%,#ffb22d 19%,#f7df00 37%,#26ff6c 56%,#268bff 76%,#8b3cff 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3535', endColorstr='#8b3cff',GradientType=1 );
-    width: 169px;
-    margin: 8px 0 8px auto;
+    width: 183px;
+    margin: 5px -3px 8px auto;
 }
 
 
@@ -1466,7 +1487,7 @@ dl {
             -o-transform: none !important;
             transform: none !important;
         }
-        #footer .copyright span.icons, #footer hr { display: none; }
+        /*#footer .copyright span.icons, #footer hr { display: none; }*/
     }
 
     /* Extra Small Devices, Phones */
