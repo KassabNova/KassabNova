@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  kassabnova:
+    image: ${DOCKER_REGISTRY-}kassabnova
+    build:
+      context: .
+      dockerfile: KassabNova/Dockerfile
