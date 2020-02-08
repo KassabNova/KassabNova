@@ -6,3 +6,9 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+  proxy:
+    image: ${DOCKER_REGISTRY-}proxy
+    build:
+      context: .
+      dockerfile: ./nginx/Dockerfile
+
