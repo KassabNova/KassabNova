@@ -1541,9 +1541,9 @@ dl {
         }
     }
 
-    @media only screen and (max-width : 385px) {
+    @media only screen and (max-width : 380px) {
         dl{
-            width:79%;
+            width:100%;
         }
     }
 
