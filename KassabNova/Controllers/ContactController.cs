@@ -20,11 +20,12 @@ namespace KassabNova.Controllers
         }
 
         // GET: api/Contact/5
-        [HttpGet("{id}", Name = "Get")]
-        public string Get(int id)
+        [HttpGet]
+        public void Get(string name, string email, string inquiry)
         {
             //name=qwer&email=asdf&inquiry=About+a+new+project
-            return "value";
+            Console.WriteLine(name);
+            //return new string[] { $"name:{name}", "value2" };
         }
 
         // POST: api/Contact
