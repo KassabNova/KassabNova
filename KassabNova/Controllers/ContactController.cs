@@ -11,13 +11,6 @@ namespace KassabNova.Controllers
     [ApiController]
     public class ContactController : ControllerBase
     {
-        // GET: api/Contact
-        [HttpGet]
-        public IEnumerable<string> Get(int id)
-        {
-            //name=qwer&email=asdf&inquiry=About+a+new+project
-            return new string[] { $"ID:{id.ToString()}", "value2" };
-        }
 
         // GET: api/Contact/5
         [HttpGet]
@@ -25,6 +18,7 @@ namespace KassabNova.Controllers
         {
             //name=qwer&email=asdf&inquiry=About+a+new+project
             Console.WriteLine(name);
+            Redirect("ckassab.dev");
             //return new string[] { $"name:{name}", "value2" };
         }
 
