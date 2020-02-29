@@ -18,7 +18,7 @@ namespace KassabNova.Controllers
         {
             //name=qwer&email=asdf&inquiry=About+a+new+project
             Console.WriteLine(name);
-            Redirect("ckassab.dev");
+            Redirect("Home/Index");
             //return new string[] { $"name:{name}", "value2" };
         }
 
