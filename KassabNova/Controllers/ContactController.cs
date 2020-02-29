@@ -7,21 +7,23 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace KassabNova.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("/[controller]")]
     [ApiController]
     public class ContactController : ControllerBase
     {
         // GET: api/Contact
         [HttpGet]
-        public IEnumerable<string> Get()
+        public IEnumerable<string> Get(int id)
         {
-            return new string[] { "value1", "value2" };
+            //name=qwer&email=asdf&inquiry=About+a+new+project
+            return new string[] { $"ID:{id.ToString()}", "value2" };
         }
 
         // GET: api/Contact/5
         [HttpGet("{id}", Name = "Get")]
         public string Get(int id)
         {
+            //name=qwer&email=asdf&inquiry=About+a+new+project
             return "value";
         }
 
