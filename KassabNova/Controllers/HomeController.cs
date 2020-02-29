@@ -20,6 +20,8 @@ namespace KassabNova.Controllers
 
         public IActionResult Index()
         {
+            string message = $"About page visited at {DateTime.UtcNow.ToLongTimeString()}";
+            this._logger.LogInformation("Message displayed: {message}", message);
             return View();
         }
 

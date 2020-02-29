@@ -1529,11 +1529,22 @@ dl {
         #blurb { padding: 100px 0 150px; }
         #our-process, #our-services, #contact { padding: 100px 0; }
         #contact { padding-bottom: 200px; }
+        dl{
+            width:79%;
+        }
     }
 
     /* Custom, iPhone Retina */
     @media only screen and (max-width : 320px) {
+        dl{
+            width:100%;
+        }
+    }
 
+    @media only screen and (max-width : 380px) {
+        dl{
+            width:100%;
+        }
     }
 
 

@@ -47,6 +47,48 @@ $(window).load(function () {
         .on('start', function (e) {
             $('body').addClass('hide-those-particles');
         });
+    var topperScene = new ScrollScene({
+        triggerElement: '#topper',
+        offset: 150,
+        loglevel: 3,
+    })
+        .on('leave', function (e) {
+
+            $('.hover-block.k').trigger("mouseover");
+
+            setTimeout(function () {
+                $('.hover-block.k').trigger("mouseout");
+            }, 700);
+
+
+            $('.hover-block.a-1').trigger("mouseover");
+            setTimeout(function () {
+                $('.hover-block.a-1').trigger("mouseout");
+            }, 700);
+
+            $('.hover-block.s-1').trigger("mouseover");
+            setTimeout(function () {
+                $('.hover-block.s-1').trigger("mouseout");
+            }, 700);
+
+
+            $('.hover-block.s-2').trigger("mouseover");
+            setTimeout(function () {
+                $('.hover-block.s-2').trigger("mouseout");
+            }, 700);
+
+            $('.hover-block.a-2').trigger("mouseover");
+            setTimeout(function () {
+                $('.hover-block.a-2').trigger("mouseout");
+            }, 700);
+
+            $('.hover-block.b').trigger("mouseover");
+            setTimeout(function () {
+                $('.hover-block.b').trigger("mouseout");
+            }, 700);
+        })
+        .addTo(topperScrollMagicController);
+
     var camera, scene, renderer, mouseX = 0, mouseY = 0, particles = [];
     initStars();
     function initStars() {
@@ -129,6 +171,48 @@ $(window).load(function () {
         .addTo(scrollMagicController);
 
 
+    // FOOTER STUFF
+    var footerScene = new ScrollScene({
+        triggerElement: '#footer',
+        offset: -200
+    })
+        .on('enter', function (e) {
+
+            $('.hover-block.k').trigger("mouseover");
+
+            setTimeout(function () {
+                $('.hover-block.k').trigger("mouseout");
+            }, 700);
+
+
+            $('.hover-block.a-1').trigger("mouseover");
+            setTimeout(function () {
+                $('.hover-block.a-1').trigger("mouseout");
+            }, 700);
+
+            $('.hover-block.s-1').trigger("mouseover");
+            setTimeout(function () {
+                $('.hover-block.s-1').trigger("mouseout");
+            }, 700);
+
+
+            $('.hover-block.s-2').trigger("mouseover");
+            setTimeout(function () {
+                $('.hover-block.s-2').trigger("mouseout");
+            }, 700);
+
+            $('.hover-block.a-2').trigger("mouseover");
+            setTimeout(function () {
+                $('.hover-block.a-2').trigger("mouseout");
+            }, 700);
+
+            $('.hover-block.b').trigger("mouseover");
+            setTimeout(function () {
+                $('.hover-block.b').trigger("mouseout");
+            }, 700);
+        })
+        .addTo(scrollMagicController);
+
 
 
 
@@ -206,7 +290,6 @@ function introStuff() {
 function fillTopper() {
     $('#topper').height($(window).height());
 }
-
 function initParticles() {
     particlesJS('contact', {
         particles: {
