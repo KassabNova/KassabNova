@@ -20,8 +20,7 @@ namespace KassabNova.Controllers
 
         public IActionResult Index()
         {
-            string message = $"About page visited at {DateTime.UtcNow.ToLongTimeString()}";
-            this._logger.LogInformation("Message displayed: {message}", message);
+            this._logger.LogInformation($"Home page visited at {DateTime.UtcNow.ToLongTimeString()}, from {HttpContext.Connection.RemoteIpAddress}");
             return View();
         }
 
