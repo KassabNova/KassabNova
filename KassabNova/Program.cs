@@ -21,6 +21,11 @@ namespace KassabNova
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
+                })
+                .ConfigureAppConfiguration((hostingContext, config) =>
+                {
+                    config.AddJsonFile(
+                        "config.json", optional: false);
                 });
     }
 }

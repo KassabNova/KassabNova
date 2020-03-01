@@ -145,7 +145,20 @@ $(window).load(function () {
     introStuff();
 
 
+    //CONTACT STUFF
+    $('#contactForm').submit(function (e) {
+        e.preventDefault();
+        $("#message").text("Thank you! I'll get in touch");
+        $("#contactSubmit").css("display", "none");
+        $.ajax({
+            type: 'POST',
+            url: '/contact',
+            data: $(this).serialize(),
 
+        });
+
+
+    })
 
     // BLURB STUFF
     var scrollMagicController = new ScrollMagic();

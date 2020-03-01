@@ -595,11 +595,11 @@
                             <p class="lead">
                                 Contact me and I'll get back to you
                                 <br>
-                                my email is <a href="mailto:ckassabandre@gmail.com">ckassabandre@gmail.com</a>
+                                my email is <a href="mailto:ckassabandre@gmail.com">ckassabandre[at]gmail[dot]com</a>
                             </p>
                         </div>
                         <div class="col-sm-7 contact-form">
-                            <form action="/contact">
+                            <form id="contactForm" action="/contact" method="post">
                                 <div class="input-wrap" style="transform: matrix(1, 0, 0, 1, 0, 24.6621);">
                                     <input class="input name" type="text" name="name" placeholder="Your name please">
                                 </div>
@@ -616,10 +616,10 @@
                                     </select>
                                 </div>
                                 <div class="input-wrap textarea" style="transform: matrix(1, 0, 0, 1, 0, 29.056);">
-                                    <textarea class="input message" placeholder="Want something done?"></textarea>
+                                    <textarea id="message"name="message" class="input message" placeholder="Want something done?"></textarea>
                                 </div>
                                 <div class="input-wrap submit" style="transform: matrix(1, 0, 0, 1, 0, 32.1853);">
-                                    <input class="input" type="submit" value="Contact Me">
+                                    <input id="contactSubmit" class="input" type="submit" value="Contact Me">
                                 </div>
                             </form>
                         </div>
