@@ -148,9 +148,7 @@ $(window).load(function () {
     //CONTACT STUFF
     $('#contactForm').submit(function (e) {
         e.preventDefault();
-        $("#message").text("Thank you! I'll get in touch");
-        $("#message").html("Thank you! I'll get in touch");
-        $("#message").val("Thank you! I'll get in touch");
+
 
         $("#contactSubmit").css("display", "none");
         $.ajax({
@@ -158,8 +156,12 @@ $(window).load(function () {
             url: '/contact',
             data: $(this).serialize(),
 
-        });
+        }).done(function () {
 
+            $("#message").text("Thank you! I'll get in touch");
+            $("#message").html("Thank you! I'll get in touch");
+            $("#message").val("Thank you! I'll get in touch");
+        });
 
     })
 
