@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Net;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -40,6 +41,8 @@ namespace KassabNova.Controllers
             var msg = MailHelper.CreateSingleEmail(from, to, subject, plainTextContent, htmlContent);
 
             Response response = await client.SendEmailAsync(msg);
+            HttpStatusCode statusCode = response.StatusCode;
+            Console.WriteLine($"El correo manda {statusCode}");
         }
 
         // POST: api/Contact
