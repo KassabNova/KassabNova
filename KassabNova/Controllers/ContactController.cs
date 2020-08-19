@@ -1,14 +1,9 @@
 ﻿using System;
 using System.Net;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using SendGrid;
 using SendGrid.Helpers.Mail;
-using System;
-using System.Threading.Tasks;
 using Microsoft.Extensions.Configuration;
 using System.Text.RegularExpressions;
 
@@ -78,7 +73,7 @@ namespace KassabNova.Controllers
                 email = "SecretFan69@email.com";
             }
             Console.WriteLine($"Sending email");
-            SendMail(name, email, inquiry, message, apiKey, myEmail, myOtherEmail);
+            _ = SendMail(name, email, inquiry, message, apiKey, myEmail, myOtherEmail);
         }
 
 
