@@ -4,10 +4,10 @@
 
 # Hello there, I'm Carlos Kassab 🖖🏽
 
-I'm a senior year student in **Computer Science** @ UAG. 
+I'm a recent grad in **Computer Science** @ UAG. 
 
-Currently writing my thesis on WebAssembly, but also looking for a new internship or job oportunity! 
-If interested, please contact me 💌.
+Currently working @ Oracle, but also looking into doing a Masters degree in japan or getting a job there! 
+If interested in working together, please contact me 💌.
 
 Some of the things that really drive me are: **challenges 🌟**, **new technologies** (looking at you, Blazor 🔥), **Unicycling 🚴🏽‍♂️** 
 
