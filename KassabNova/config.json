@@ -1,5 +1,5 @@
 {
-    "sendgrid_api_key": "<PUT API KEY HERE>",
-    "user_email": "ckassabandre .com",
-    "user_email_other": "ckassabandre .com"
+    "sendgrid_api_key": "<INSERT_API_KEY>",
+    "to_email": "ckassabandre[]mail.com",
+    "from_email": "me@ckassab.dev"
 }
