@@ -178,12 +178,12 @@ $(window).load(function () {
             x: 0,
             opacity: 1
         },
-        0.2
+        0.1
     );
     var blurbScene = new ScrollScene({
         triggerElement: '#blurb .item',
         duration: 500,
-        offset: -200
+        offset: -20
     })
         .setTween(blurbTween)
         .addTo(scrollMagicController);
@@ -192,7 +192,7 @@ $(window).load(function () {
     // FOOTER STUFF
     var footerScene = new ScrollScene({
         triggerElement: '#footer',
-        offset: -200
+        offset: -600
     })
         .on('enter', function (e) {
 
